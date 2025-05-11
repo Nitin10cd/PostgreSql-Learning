@@ -44,3 +44,9 @@ SELECT * FROM employees WHERE fname LIKE 'An%';
 SELECT * FROM employees WHERE fname LIKE '%a';
 SELECT * FROM employees WHERE fname LIKE '%i%';
 SELECT * FROM employees WHERE fname LIKE '_a%';
+
+
+-- GROUP BY
+
+SELECT dept , SUM(salary) AS total_salary FROM employees GROUP BY dept;
+SELECT dept , COUNT(fname) AS totaal_employees FROM employees GROUP BY dept;
